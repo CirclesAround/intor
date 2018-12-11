@@ -1,7 +1,4 @@
-@weuiFontEN:-apple-system-font,"Helvetica Neue";
-@weuiFontCN:"PingFang SC","Hiragino Sans GB","Microsoft YaHei";
-@weuiFontSans:sans-serif;
-@weuiFontDefault:@weuiFontEN,@weuiFontSans;
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -29,6 +26,7 @@ a img {
 
 a {
   text-decoration: none;
+  .setTapColor();
 }
 li{
   list-style: none;
@@ -37,4 +35,5 @@ button,input,textarea{
   outline: none;
   border: none;
   -webkit-appearance: none;
+  .setTapColor()
 }

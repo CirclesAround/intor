@@ -1,0 +1,32 @@
+.setSwitch (@color: #b6b6b6, @color2: #ff8a00) {
+  .custom-switch{
+    width: 1.2rem;
+    height: .64rem;
+    overflow: hidden;
+    border-radius: .32rem;
+    input{
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      background: #b6b6b6;
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        top: .04rem;
+        left: .04rem;
+        width: .56rem;
+        height: .56rem;
+        background: #fff;
+        border-radius: 50%;
+      }
+      &:checked{
+        background: @default_color;
+        &::before{
+          right: .04rem;
+          left: auto;
+        }
+      }
+    }
+  }
+}

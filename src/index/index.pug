@@ -1,14 +1,5 @@
-doctype html
-html
-    head
-        block meta
-            meta(charset="UTF-8")
-            meta(name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
-            meta(name="format-detection" content="telephone=no,email=no")
-        block localCss
-            link(rel="stylesheet" href="css/index.css")
-        block script
-            script(src="js/index.js")
-    body
-        p hello world
-        span 你好世界
+extends ../../common/layout/layout
+block append meta
+    title 主页
+block content
+   p 你好世界
