@@ -5,15 +5,12 @@ window.addEventListener('DOMContentLoaded' , function () {
        },
        init() {
            this.attachEvent()
-           this.methods.test()
        },
        attachEvent () {
 
        },
        methods: {
-           test () {
-               console.log(2)
-           }
+
        }
    }
    app.init()
