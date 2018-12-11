@@ -9,15 +9,10 @@
            data: {},
            init: function init() {
                this.attachEvent();
-               this.methods.test();
            },
            attachEvent: function attachEvent() {},
 
-           methods: {
-               test: function test() {
-                   console.log(2);
-               }
-           }
+           methods: {}
        };
        app.init();
    });
