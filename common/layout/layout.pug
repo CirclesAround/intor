@@ -8,7 +8,9 @@ html
         block localCss
             link(rel="stylesheet" href="css/index.css")
         block commonJs
-            script(src="http://code.jquery.com/jquery-1.10.2.min.js")
+            link(rel='stylesheet' href='http://member.lm720.com/skin/common/weui.min.css')
+            script(src='http://member.lm720.com/skin/common/weui.min.js' defer)
+            script(src='http://code.jquery.com/jquery-1.12.4.min.js' defer)
         block script
             script(src="js/index.js")
         //block vconsole

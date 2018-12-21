@@ -10,7 +10,22 @@
            init: function init() {
                this.attachEvent();
            },
-           attachEvent: function attachEvent() {},
+           attachEvent: function attachEvent() {
+               $('#change').on('click', function () {
+                   weui.datePicker({
+                       start: new Date(), // 从今天开始
+                       end: 2030,
+                       defaultValue: [2020, 6, 9],
+                       onChange: function onChange(result) {
+                           console.log(result);
+                       },
+                       onConfirm: function onConfirm(result) {
+                           console.log(result);
+                       },
+                       id: 'datePicker'
+                   });
+               });
+           },
 
            methods: {}
        };
