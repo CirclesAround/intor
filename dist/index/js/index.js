@@ -13,14 +13,12 @@
            attachEvent: function attachEvent() {
                $('#change').on('click', function () {
                    weui.datePicker({
-                       start: new Date(), // 从今天开始
+                       start: 1986, // 从哪一天开始
                        end: 2030,
-                       defaultValue: [2020, 6, 9],
-                       onChange: function onChange(result) {
-                           console.log(result);
-                       },
+                       defaultValue: [1986, 2, 22],
                        onConfirm: function onConfirm(result) {
                            console.log(result);
+                           $('#change').val(result[0].value + ' \u5E74 ' + result[1].value + ' \u6708 ' + result[2].value + ' \u65E5');
                        },
                        id: 'datePicker'
                    });

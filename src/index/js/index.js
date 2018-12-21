@@ -9,14 +9,12 @@ window.addEventListener('DOMContentLoaded' , function () {
        attachEvent () {
           $('#change').on('click', function () {
               weui.datePicker({
-                  start: new Date(), // 从今天开始
+                  start: 1986, // 从哪一天开始
                   end: 2030,
-                  defaultValue: [2020, 6, 9],
-                  onChange: function(result){
-                      console.log(result);
-                  },
+                  defaultValue: [1986, 2, 22],
                   onConfirm: function(result){
                       console.log(result);
+                      $('#change').val(`${result[0].value} 年 ${result[1].value} 月 ${result[2].value} 日`)
                   },
                   id: 'datePicker'
               })
